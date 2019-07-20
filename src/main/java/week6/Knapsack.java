@@ -8,7 +8,6 @@ public class Knapsack {
         int capacity = W + 1;
         int items = w.length;
         int[][] weights = new int[items][capacity];
-
         for (int i = 1; i < items; i++) {
             for (int j = 1; j < capacity; j++) {
                 weights[i][j] = weights[i - 1][j];
